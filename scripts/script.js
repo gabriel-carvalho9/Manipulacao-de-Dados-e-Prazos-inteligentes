@@ -1,6 +1,6 @@
 function gerarTicket() {
     const nomeRaw = document.getElementById("input-nome").value;
-    const nomeLimpo = nomeRaw.toUpperCase().trim().split(" ");
+    const nomeLimpo = nomeRaw.toUpperCase().trim().split(/\s+/); // O /\s+/ eu pesquisei pois se deixasse apenas " ", escrevendo vários espaços vazios no meio dava problema
     const urgenciaRaw = document.getElementById("urgencia").value;
 
     // Validação do nome
