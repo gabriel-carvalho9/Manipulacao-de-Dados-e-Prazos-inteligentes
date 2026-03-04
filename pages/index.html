@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Abertura de Chamado</h2>
+            <label>Nome Completo:</label>
+            <input type="text" id="input-nome" placeholder="Digite seu nome">
+
+            <button onclick="gerarTicket()">Gerar Ticket</button>
+        </section>
+        <section>
+            <p>Escolha o Nível de Urgência:</p>
+            <select id="urgencia">
+                <option value="" disabled selected>Escolha o Nível de Urgência</option>
+                <option value="2">Urgência Alta: Prazo de 2 dias</option>
+                <option value="7">Urgência Média: Prazo de 7 dias</option>
+                <option value="10">Urgência Baixa: Prazo de 10 dias</option>
+            </select>
+        </section>
+        <section>
+            <br>
+            <section id="ticket-resultado" style="display: none;">
+            <h3>Ticket Gerado!</h3>
+            <p>Cliente: <strong id="out-nome"></strong></p>
+            <p>Data de Abertura: <time id="out-data"></time></p>
+            <p>Prazo de Resposta: <mark id="out-prazo"></mark></p>
+        </section>
+    </main>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
