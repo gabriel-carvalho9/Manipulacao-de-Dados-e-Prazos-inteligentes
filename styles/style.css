@@ -1,4 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo da página */
+body {
+    background: linear-gradient(175deg, #4e73df, #000000);
+    min-height: 776px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container principal */
 main {
-    background-color: white;
-    margin-left: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Títulos */
+h2, h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 20px;
+}
+
+/* Inputs e select */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.2s;
+}
+
+/* Efeito ao clicar */
+input:focus, select:focus {
+    border-color: #4e73df;
+    outline: none;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+/* Hover do botão */
+button:hover {
+    background-color: #2e59d9;
+}
+
+/* Resultado do ticket */
+#ticket-resultado {
+    background: #f8f9fc;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #1cc88a;
+}
+
+/* Destaque do prazo */
+mark {
+    background: #00c3ff;
+    padding: 2px 6px;
+    border-radius: 4px;
 }
